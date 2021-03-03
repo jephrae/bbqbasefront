@@ -1,0 +1,105 @@
+header {
+  color: var(--light);
+  background-color: #474853;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.App {
+  background-color: #aaa0a0;
+  width: auto;
+}
+
+.recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.details-container img {
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 2px;
+  border: black;
+  border-width: 2;
+}
+.details-container {
+  font-family: Roboto Slab;
+}
+.details-title {
+  /* font-family: Playfair; */
+  font-weight: 700;
+  /* font-style: bold, italic; */
+}
+
+.card {
+  color: var(--light);
+  background-color: #474853;
+  width: 200px;
+  margin: 1rem;
+  border-color: black;
+  border: 2px;
+  border-width: 2;
+  height: 420px;
+}
+.card-text {
+  width: auto;
+  font-family: Roboto Slab;
+}
+.card-title {
+  font-family: Playfair;
+  font-size: large;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #86b3d1;
+}
+.card-img {
+  width: 18rem;
+}
+
+.form-group {
+  width: 60vh;
+}
+
+img {
+  padding: 2px;
+}
+.footer {
+  font-family: Playfair;
+  font-weight: 500;
+  font-style: italic;
+  display: flex;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #474853;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+/* phone portrait */
+@media (max-width: 420px) {
+  .app {
+    width: 370px;
+  }
+  .recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+    justify-content: center;
+  }
+  .card {
+    width: 300px;
+    height: auto;
+  }
+  .details-container {
+    display: grid;
+  }
+
+  .details-container img {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .form-group {
+    width: 300px;
+  }
+}
